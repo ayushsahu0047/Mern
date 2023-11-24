@@ -1,0 +1,65 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: black;
+    color: white;
+
+}
+.left_slider{
+    background-color: blue;
+      height: 100vh;
+  width: 30%;
+  padding: 2rem;
+    color: wheat;
+    width: 25%;
+}
+.item{
+    padding: 1rem;
+    font-size: 1.2w;
+}
+.fa-solid
+{
+    margin-right: 5px;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 1rem;
+    
+
+}
+.items img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px  solid red;
+
+}
+@media only screen and (max-width:768px)
+{.item{
+    font-size: 2.5vw;
+}
+
+}
+.insta_story{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+ overflow-y: scroll;
+
+}
+.insta_story::-webkit-scrollbar{
+    display: none;
+}
+.insta_clone
+{
+    display: flex;
+}
