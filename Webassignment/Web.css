@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    font-size: 20rem;
+    color: goldenrod;
+    background-color: green;
+    display: inline;
+  
+
+}
+.nav{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    font-weight: bold;
+ 
+
+
+}
+.nav:hover{
+    background-color:red;
+    color: greenyellow;
+    
+}
+.content{
+    font-size: 5rem;
+    color: red;
+    background-color: black;
+    margin:30rem;
+    padding: 10rem;
+    font-style: italic;
+  }
+  .container{
+    display: flex;
+  }
+  .box1{
+    background-color: blueviolet;
+    height: 20rem;
+    width: 20rem;
+    margin: 20rem;
+  }
+  .box2{
+    background-color: aquamarine;
+    height: 20rem;
+    width: 20rem;
+    margin: 20rem;
+  }
+  .box3{
+    background-color: brown;
+    height: 20rem;
+    width: 20rem;
+    margin: 20rem;
+  }
