@@ -1,30 +1,38 @@
-*{
+/* Resetting margin and padding for all elements */
+* {
     margin: 0%;
     padding: 0%;
 }
-body{
+
+/* Body Styles */
+body {
     background-color: black;
     color: white;
-
 }
-.left_slider{
+
+/* Left Slider Styles */
+.left_slider {
     background-color: black;
-      height: 100vh;
-  width: 25%;
-  padding: 2rem;
-    color: wheat;
+    height: 100vh;
     width: 25%;
+    padding: 2rem;
+    color: wheat;
     border-right: 1px solid rgb(41, 36, 36);
 }
-.item{
+
+/* Navigation Item Styles */
+.item {
     padding: 1rem;
-    font-size: 1.2w;
+    font-size: 1.2vw;
 }
-.fa-solid
-{
+
+/* Font Awesome Icon Styles */
+.fa-solid {
     margin-right: 5px;
 }
-.items{
+
+/* Story Item Styles */
+.items {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,63 +40,65 @@ body{
     flex-direction: column;
     font-size: 1rem;
     gap: 1rem;
-    
-
 }
-.items img{
+
+.items img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px  solid red;
-
-}
-@media only screen and (max-width:768px)
-{.item{
-    font-size: 2.5vw;
+    border: 1px solid red;
 }
 
+/* Responsive Styles for Small Screens */
+@media only screen and (max-width: 768px) {
+    .item {
+        font-size: 2.5vw;
+    }
 }
-.insta_story{
+
+/* Instagram Story Styles */
+.insta_story {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     margin: 2rem;
-     overflow-y: scroll;
-
+    overflow-y: scroll;
 }
-.insta_story::-webkit-scrollbar{
+
+/* Hide scrollbar for Instagram Story */
+.insta_story::-webkit-scrollbar {
     display: none;
 }
-.insta_clone
-{
+
+/* Main Container Styles */
+.insta_clone {
     display: flex;
 }
-.img_profile{
+
+/* Profile Image Styles */
+.img_profile {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.img_profile img{
+
+.img_profile img {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    border: 1px  solid red;
-
-
-    
+    border: 1px solid red;
 }
-.person_image{
+
+/* Person Image Styles */
+.person_image {
     display: flex;
     justify-content: center;
     align-items: center;
-   
- 
-
-
 }
-.container{
+
+/* Container Styles for Suggestions Section */
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,30 +106,39 @@ body{
     width: 100%;
     margin: 20px;
 }
-.content{
+
+/* Content Section Styles */
+.content {
     background-color: rgb(7, 7, 7);
     width: 55%;
-
 }
 
-.suggestions{
-width: 30%;
-margin-top: 30px;
-
+/* Suggestions Section Styles */
+.suggestions {
+    width: 30%;
+    margin-top: 30px;
 }
-#text{
+
+/* Title and "See All" Link Styles */
+#text {
     justify-content: space-between;
     width: 82%;
 }
-.post{
+
+/* Post Section Styles */
+.post {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.post img{
+
+/* Image in the Post Styles */
+.post img {
     width: 100%;
     object-fit: contain;
 }
-@media  only screen and (max-width: 768){
 
+/* Responsive Styles for Small Screens - Empty Media Query */
+@media only screen and (max-width: 768) {
+    /* Add responsive styles for small screens here if needed */
 }
