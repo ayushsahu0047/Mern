@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  color: white;
+}
+html, body, #root, .App{
+  min-height: 100%;
+}
