@@ -1,28 +1,32 @@
-import React, { useState } from 'react'
-import {product} from './Prdouct_data'
-import { Link }from 'react-router-dom'
-import './style.css'
-const Product = () => {
- const [products,setdata]=  useState(product);
-const filterMethod = (catagory) => {
-  setdata(product.filter((data)=>data.catagory == catagory))
-}
+import React, { useEffect, useState } from 'react'
+import { useParams,Link } from 'react-router-dom'
+import { product } from './Prdouct_data';
 
- 
+
+
+
+const SearchIteam = () => {
+const {term} = useParams();
+const [filterr,setfilter] = useState([])
+useEffect(() =>{
+    const filter =() =>{
+            setfilter(product.filter((data)=>data.title.toLowerCase().includes(term.toLowerCase())
+            )
+            );
+        
+    };
+    filter();
+},[term]);
+
+
+
 
   return (
-    <>
-      <div className="container d-flex justifly-content-center sticky-top bg-light">
-      <button onClick={()=>setdata(product)}className='btn btn-info mx-3'>No_filter</button>
-      <button onClick={()=>filterMethod("Mobiles")} className='btn btn-primary mx-3'>Mobiles</button>
-      <button  onClick={()=>filterMethod("laptop")}  className='btn btn-warning mx-3'>Laptop</button>
-      <button  onClick={()=>filterMethod("Tablet")}  className='btn btn-danger mx-3'>Tablet</button>
-
-    </div>
-
-
-  {
-    products.map((data)=>{
+ <>
+ 
+ 
+ {
+    filterr.map((data)=>{
         return (
             <>
             
@@ -62,8 +66,9 @@ const filterMethod = (catagory) => {
             </>
         )
     })
-  }
-    </>
+  }</>
+    
   )
 }
-export default Product
+
+export default SearchIteam
