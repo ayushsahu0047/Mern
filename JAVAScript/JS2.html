@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+</head>
+<body style="background-color: aqua;">
+    <h1 style="font-size: 70px;">Calci</h1>
+    <input type="text" id="val1">
+    <input type="text" id="val2">
+   
+
+    <!-- Display the result -->
+   
+
+    <script>
+        function fun1() {
+            var x = parseFloat(document.getElementById("val1").value);
+            var y = parseFloat(document.getElementById("val2").value);
+
+            let result1 = x+y;
+           
+            document.getElementById("res1").innerHTML=result1
+            
+        
+        }
+        
+        function fun2() {
+            var x = parseFloat(document.getElementById("val1").value);
+            var y = parseFloat(document.getElementById("val2").value);
+
+          
+            let result2 = x-y;
+            document.getElementById("res2").innerHTML=result2
+          
+        
+        }
+        function fun3() {
+            var x = parseFloat(document.getElementById("val1").value);
+            var y = parseFloat(document.getElementById("val2").value);
+
+          
+            let result3 = x*y;
+            document.getElementById("res3").innerHTML=result3
+          
+        
+        }
+        function fun4() {
+            var x = parseFloat(document.getElementById("val1").value);
+            var y = parseFloat(document.getElementById("val2").value);
+
+          
+            let Result4 = x/y;
+            document.getElementById("res4").innerHTML=Result4
+          
+        
+        }
+        
+        window.alert("Danger")
+      console.log("dfcsds");    
+        
+   
+   </script>
+ <h1 id="res1" style="color: brown;">Result1</h1>
+ <button onclick="fun1()">Sum</button>
+ <h1 id="res2" style="color: blueviolet;">Result2</h1>
+ <button onclick="fun2()">Sub</button>
+ <h1 id="res3">Result3</h1>
+ <button onclick="fun3()">Multiply</button>
+ <h1 id="res4">Result4</h1>
+ <button onclick="fun4()">Division</button>
+</body>
+</html>
+    
