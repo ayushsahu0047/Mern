@@ -1,37 +1,197 @@
+
 *{
     margin: 0;
     font-family: Arial;
     border: border-box;
 }
-.navbar{
-    height: 70px;
-    background-color: #0f1111;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        header {
+          
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .product-price {
+            color: #b12704;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #f0c14b;
+            border: 1px solid #a88734;
+            color: #111;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+      
+        .navbar{
+            height: 70px;
+            background-color: #0f1111;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .nav-logo{
+            height: 50px;
+            width: 100px;
+        }
+        .logo{
+            background-image: url(amazon_logo.png);
+            background-size: cover;
+            height: 50px;
+            width: 100%;
+        }
+        
+        .border :hover{
+            border:1.5px solid white;
+        }
+        .add-first{
+            color: #cccccc;
+            font-size: 1rem;
+        }
+        .add-second{
+             font-size :1rem ;
+        }
+        .add-icon{
+        
+        
+        }
+        .nav-address{
+
+            padding: 12px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 3px 0 0 3px;
+        }body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #232f3e;
     color: white;
+    padding: 10px 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-.nav-logo{
-    height: 50px;
-    width: 100px;
-}
-.logo{
-    background-image: url(amazon_logo.png);
-    background-size: cover;
-    height: 50px;
-    width: 100%;
+
+.logo {
+    font-size: 24px;
 }
 
-.border :hover{
-    border:1.5px solid white;
+.search-bar {
+    display: flex;
+    height: 40px; /* Set the desired height */
 }
-.add-first{
-    color: #cccccc;
-    font-size: 1rem;
-}
-.add-second{
-     font-size :1rem ;
-}
-.add-icon{
 
+input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    width: 300px; /* Set the desired width */
+}
 
+button {
+    padding: 5px 10px;
+    background-color: #febd69;
+    color: #232f3e;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #232f3e;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.search-bar {
+    display: flex;
+    height: 40px; /* Set the desired height */
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    width: 500px; /* Set the desired width */
+    margin-left: 10rem;
+}
+.all{
+    margin-left: 8rem;
+}
+button {
+    padding: 5px 10px;
+    background-color: #95db13;
+    color: #232f3e;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
 }
