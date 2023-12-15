@@ -1,37 +1,56 @@
-import React from "react";
-import { AuthProvider } from "./AuthContext";
-import DeepNestedComponent from "./DeepNestedComponent";
-import DataFetchingComponent from "./DataFetchingComponent";
-import Counter_Test from "./Counter_Test";
-import Person from "./Person";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import BlogForm from './BlogForm';
-import BlogPost from './BlogPost';
-import Home from "./Home";
+import React, { useState } from 'react'
+import Form from './Form'
+import Todos from './Todo'
 const App = () => {
+  const [todos, setTodos] = useState([
+    {
+      id:1,
+      title:"This is brand new Title",
+      description:"This is brand new Description"
+    },
+    {
+      id:2,
+      title:"This is brand new Title 2",
+      description:"This is brand new Description 2"
+    },
+    {
+      id:3,
+      title:"This is brand new Title 3",
+      description:"This is brand new Description 3."
+    },
+  ])
+
+  const [id, setId] = useState("")
+
+  console.log("This is id = ",id)
+
+  const deleteTodo = (id) =>{
+    setTodos(todos.filter((d)=>d.id != id))
+  }
+
+
   return (
-    <AuthProvider>
-      <Router>
-      <div className="Ayush">
-        <h1>My App</h1>
-        <DeepNestedComponent />
-      </div>
-      <div className="Ayush">
-        <DataFetchingComponent />
-      </div>
-      <div className="Ayush">
-        <Counter_Test />
-      </div>
-      <div>
-        <Person/>
-      </div>
-        <Routes>
-          <Route path="/create" element={<BlogForm />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-    </Router>
-    </AuthProvider>
-  );
-};
-export default App;
+<>
+
+<div className="container">
+  <h1 className='text-center'>React To do List CRUD App</h1>
+
+
+{/* <button
+onClick={()=>deleteTodo(2)} 
+ className='btn btn-danger'>Test Delete</button> */}
+
+  <Form
+    id={id}
+    setId={setId}
+    todos = {todos} 
+    setTodos={setTodos}
+     />
+  <Todos  todos={todos} deleteTodo={deleteTodo} setId={setId} />
+</div>
+
+</>
+  )
+}
+
+export default App
