@@ -1,0 +1,9 @@
+.homecon{
+    --mask:
+    radial-gradient(66.47px at 50% calc(100% - 91.20px),#000 99%,#0000 101%) calc(50% - 114px) 0/228px 100%,
+    radial-gradient(66.47px at 50% calc(100% + 34.20px),#0000 99%,#000 101%) 50% calc(100% - 57px)/228px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+ 
+}
+

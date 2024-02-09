@@ -1,0 +1,17 @@
+/* Prodcuts.css */
+
+.scrollable-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .image-scroll {
+    display: flex;
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+  
