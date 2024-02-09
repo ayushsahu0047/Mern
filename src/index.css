@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background{
+ 
+  color: red;
+
+ 
+}
+
+ input{
+  height: 3rem;
+  width: fit-content;
+  color: red;
+  background-color: aquamarine;
+  font-size: 3rem;
+}
+.btn{
+  color:black;
+  height: 5rem;
+  width: 10rem;
+  font-size: 3rem;
+}
+ .back1{
+  background-color: blue;
+  display: flex;
+align-items: center;
+ }

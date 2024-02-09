@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+    
+<button onclick="myfunction()">Button</button>
+<script>
+    function fact(num)
+    {
+     if(num===0)
+     {
+        return 1;
+     }
+     else{
+     return num*fact(num-1);
+     }
+    }
+    document.writeln(fact(5));
+//Clousre Function........................................................
+    let multi = new Function('x','y','z', 'return x*y*z');
+    document.writeln(multi(2,3,4))
+
+//Part2Clousre Function.....................................................
+const add = (function(){
+    let counter = 0;
+    return function ()
+    {
+        counter+=1; return counter;
+    }
+})();
+function myfunction(){
+document.writeln(add(10));   
+} 
+//Part3Arrow Function.................................................................................................
+var Display =(x)=> {
+    return x;
+}
+document.write(Display("sdfsda"));
+//Part4 Add Function Rest Parameter..............................................
+
+function add(...Marks)
+{
+    var sum = 0;
+    for(let i of Marks)
+    {
+        sum +=i;
+
+    }
+    document.write(sum);
+}
+add(3,3,34,55,66,76,6,5);
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
