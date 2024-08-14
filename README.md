@@ -31,7 +31,7 @@ A React-based website that fetches movie data from a third-party API and display
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/sagarsamvedi/IMDbClone.git
+   git clone https://github.com/ayushsahu/IMDbClone.git
    ```
 2. Navigate to the project directory:
    ```bash
